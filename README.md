@@ -1,5 +1,5 @@
 [Releases]: https://github.com/texstudio-org/texstudio/releases/
-[Paper]: https://github.com/sisinflab-swot/neural-privacy-policy/releases
+[Paper]: ""
 [Zenodo]: https://zenodo.org/doi/10.5281/zenodo.14911062
 
 [Chrome]: https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-chrome-icon.svg
@@ -22,7 +22,7 @@ state-of-the-art Deep Learning models.
 
 ## About
 
-[![Paper](https://img.shields.io/badge/Paper-blue)]()
+[![Paper](https://img.shields.io/badge/DOI--blue)]()
 [![Zenodo Full Classification Results](https://img.shields.io/badge/Zenodo-Full%20Classification%20Results-green)](https://zenodo.org/doi/10.5281/zenodo.14911062)
 
 
@@ -31,9 +31,9 @@ infrastructure designed to support real-time Machine Learning and Deep Learning 
 directly in the browser. 
 
 The manuscript describing the system architecture, methodology, and performance 
-evaluation is available at: [DOI](). 
+evaluation is available at: DOI. 
 
-If you use this software, models, or dataset, please cite the following paper:
+If you use this software, models, or data set, please cite the following paper:
 ``` BibTeX
 @inproceedings{neural-privacy-policy,
   title={},
@@ -73,7 +73,7 @@ To build the extension from source, you will need:
 1. Clone the repository
 
     ```shell
-    git clone https://github.com/sisinflab-swot/neural-privacy-policy.git
+    git clone <anonymous_link>
     cd neural-privacy-policy
     ```
 
