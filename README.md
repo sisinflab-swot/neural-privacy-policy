@@ -185,15 +185,15 @@ Once installed, the first step is to **open the extension's options page**.
 4. Once the download is complete, you can **close the settings page** — the extension is now fully configured and ready to use.
 
 
-> ⚠️ Important: Closing the settings page while the model download is still in progress may lead to incomplete downloads or unexpected extension behavior. It is strongly recommended to wait until the download is fully completed before closing the settings page.
+> ⚠️ Note: Closing the settings page while the model download is still in progress may lead to incomplete downloads or unexpected extension behavior. It is strongly recommended to wait until the download is fully completed before closing the settings page.
 
 
 
 ### Analyzing Policies
 
-1. Navigate to a website.
+1. **Navigate** to a website.
 
-2. Click the extension icon in the browser.
+2. **Click the extension icon** in the browser.
 
 3. The extension will automatically retrieve and classify the privacy policy.
 
