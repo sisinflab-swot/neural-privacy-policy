@@ -1,0 +1,108 @@
+{
+    "TinyBERT" : {
+        "base": {
+            "huggingface": "https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/TinyBERT/base/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/TinyBERT/base/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/TinyBERT/base/tokenizer_config.json"
+            }
+        },
+        "large": {
+            "huggingface": "https://huggingface.co/huawei-noah/TinyBERT_General_6L_768D",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/TinyBERT/large/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/TinyBERT/large/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/TinyBERT/large/tokenizer_config.json"
+            }
+        }
+    },
+    "BERT" : {
+        "base": {
+            "huggingface": "https://huggingface.co/google-bert/bert-base-uncased",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/BERT/base/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/BERT/base/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/BERT/base/tokenizer_config.json"
+            }
+        },
+        "large": {
+            "huggingface": "https://huggingface.co/google-bert/bert-large-uncased",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/BERT/large/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/BERT/large/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/BERT/large/tokenizer_config.json"
+            }
+        }
+    },
+    "ELECTRA" : {
+        "small": {
+            "huggingface": "https://huggingface.co/google/electra-small-discriminator",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/small/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/small/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/small/tokenizer_config.json"
+            }
+        },
+        "base": {
+            "huggingface": "https://huggingface.co/google/electra-base-discriminator",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/base/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/base/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/base/tokenizer_config.json"
+            }
+        },
+        "large": {
+            "huggingface": "https://huggingface.co/google/electra-base-discriminator",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/large/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/large/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/ELECTRA/large/tokenizer_config.json"
+            }
+        }
+    },
+    "DeBERTa" : {
+        "xsmall": {
+            "huggingface": "https://huggingface.co/microsoft/deberta-v3-xsmall",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/xsmall/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/xsmall/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/xsmall/tokenizer_config.json"
+            }
+        },
+        "small": {
+            "huggingface": "https://huggingface.co/microsoft/deberta-v3-small",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/small/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/small/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/small/tokenizer_config.json"
+            }
+        },
+        "base": {
+            "huggingface": "https://huggingface.co/microsoft/deberta-v3-base",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/base/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/base/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/DeBERTa/base/tokenizer_config.json"
+            }
+        }
+    },
+    "ALBERT" : {
+        "base": {
+            "huggingface": "https://huggingface.co/albert/albert-base-v2",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/ALBERT/base/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/ALBERT/base/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/ALBERT/base/tokenizer_config.json"
+            }
+        },
+        "large": {
+            "huggingface": "https://huggingface.co/albert/albert-large-v2",
+            "model": "https://swot.sisinflab.poliba.it/res/liberta/ALBERT/large/model.onnx",
+            "tokenizer": {
+                "tokenizer": "https://swot.sisinflab.poliba.it/res/liberta/ALBERT/large/tokenizer.json",
+                "tokenizer_config": "https://swot.sisinflab.poliba.it/res/liberta/ALBERT/large/tokenizer_config.json"
+            }
+        }
+    }
+}

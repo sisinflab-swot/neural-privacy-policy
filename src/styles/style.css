@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+}
+
+.app {
+    /*zoom: 150%;*/
+    width: 500px;
+    height: fit-content;
+    display: block;
+    font-family: Segoe UI, Tahoma, sans-serif;
+    font-size: 75%;
+    /*background: rgb(65,105,225);*/
+    /*background: linear-gradient(180deg, rgba(65,105,225,1) 0%, rgba(0,255,239,1) 100%);*/
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#analysis-container {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap: 10px;
+}
+
+#category-list-container {
+    flex-grow: 1;
+    color: #333;
+    padding-inline-start: 0;
+    margin: 0;
+    padding: 0 10px;
+    min-width: 0;
+}
+
+.category-item {
+    list-style-type: none;
+    padding: 0 5px;
+    /* Initial scale of 1, and a smooth transform transition */
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.category-item.grow {
+    transform: scale(1.5); /* Grown by 50% */
+}
+
+.category-item-header {
+    cursor: pointer;
+    padding: 2px 0;
+    display: flex;
+    place-items: center;
+    gap: 5px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.hidden {
+    opacity: 0.35;
+}
+
+.category-text {
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+    width: 100%;
+}
+
+.category-text:hover {
+    color: #3A8DFF;
+}
+
+/*.category-item:hover {*/
+/*    color: #697cbf;*/
+/*    background-color: #dcf1ff;*/
+/*}*/
+
+.category-value {
+    font-size: 12px;
+    color: #666666;
+    font-weight: bold;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.category-value.animated {
+    transform: scale(1.5);
+    opacity: 0.7;
+}
+
+.category-color {
+    width: 15px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #3A8DFF;
+}
+
+.chart-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+#chart-total {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Transform to center the label exactly at the midpoint */
+    transform: translate(-50%, -50%);
+    /* Optional styling for the label */
+    font-size: x-large;
+    font-weight: bold;
+    color: #333333;
+    visibility: hidden;
+}
+
+#policy-domain-container {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 4px 16px rgba(32, 44, 68, 0.1);
+}
+
+#policy-domain {
+    font-size: 14px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3A8DFF;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#progress-bar-container {
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+}
+
+input:disabled,
+button:disabled,
+select:disabled {
+    cursor: not-allowed;
+}
+
+#error-icon {
+    fill: #3A8DFF;
+    width: 50px;
+    height: 50px;
+}
+
+#error-message {
+    margin: auto;
+    color: #333;
+    text-align: justify;
+    font-size: 14px;
+    padding: 0 10px;
+    overflow-wrap: anywhere;
+}
+
+.paragraph-list {
+    padding-left: 0;
+    max-height: 150px;  /* Controls vertical scrolling */
+    overflow-y: auto;
+    list-style-type: none;
+    display: none;      /* Initially hidden */
+    width: 100%;        /* Ensure it doesn't exceed container width */
+    max-width: 100%;    /* Prevents it from exceeding its container */
+}
+
+.paragraph-list li {
+    margin: 10px 0;
+    /*padding: 5px 0;*/
+    font-size: 11px;
+    line-height: 1.2em; /* Ensure consistent line height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    /* Prevents text wrapping */
+    cursor: pointer;
+    display: block;
+    width: 100%;           /* Ensures it fills the parent's width */
+    max-width: 100%;       /* Ensures it never overflows the parent */
+    box-sizing: border-box; /* Ensures padding doesn’t increase width */
+    overflow-wrap: break-word; /* Ensures words break properly */
+    word-break: break-word;    /* Allow breaking long words */
+}
+
+.paragraph-list li.expanded {
+    white-space: normal;
+    height: auto;  /* Allow text to expand */
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.paragraph-list li:hover {
+    color: #3A8DFF;
+    border-radius: 5px;
+}
+
+.paragraph-list li::before {
+    content: "▶";       /* Or "\25B6" (Unicode) */
+    display: inline-block;
+    margin-right: 8px;  /* Spacing between symbol and text */
+}
+
+.paragraph-list li.expanded::before {
+    content: "▼";       /* Or "\25BC" (Unicode) */
+}

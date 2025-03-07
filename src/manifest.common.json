@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Neural Privacy Policy",
+  "description": "A privacy extension that classifies privacy policies in real-time using deep learning, helping users quickly understand key terms and potential risks in privacy documents.",
+  "version": "0.1.1",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "settings.html",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  }
+}
