@@ -24,7 +24,6 @@ state-of-the-art Deep Learning models.
 
 [![Paper](https://img.shields.io/badge/Paper-blue)]()
 [![Zenodo Full Classification Results](https://img.shields.io/badge/Zenodo-Full%20Classification%20Results-green)](https://zenodo.org/doi/10.5281/zenodo.14911062)
-![GitHub Release](https://img.shields.io/github/v/release/sisinflab/neural-privacy-policy)
 
 
 This extension is part of the liBERTa framework, a general-purpose client-side 
