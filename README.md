@@ -1,4 +1,4 @@
-[Releases]: https://github.com/texstudio-org/texstudio/releases/
+[Releases]: https://github.com/sisinflab-swot/neural-privacy-policy/releases/
 [Paper]: ""
 [Zenodo]: https://zenodo.org/doi/10.5281/zenodo.14911062
 
@@ -24,6 +24,8 @@ state-of-the-art Deep Learning models.
 
 [![Paper](https://img.shields.io/badge/DOI--blue)]()
 [![Zenodo Full Classification Results](https://img.shields.io/badge/Zenodo-Full%20Classification%20Results-green)](https://zenodo.org/doi/10.5281/zenodo.14911062)
+![GitHub Release](https://img.shields.io/github/v/release/sisinflab-swot/neural-privacy-policy)
+
 
 
 This extension is part of the liBERTa framework, a general-purpose client-side 
@@ -56,7 +58,7 @@ If you use this software, models, or data set, please cite the following paper:
 
 ### Download prebuilt Releases
 
-The extension is available for download from the [Releases](https://github.com/owner/repo/releases/latest) section of this repository.
+The extension is available for download from the [Releases] section of this repository.
 
 
 
